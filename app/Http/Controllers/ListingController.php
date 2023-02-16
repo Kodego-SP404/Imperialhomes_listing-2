@@ -16,6 +16,10 @@ class ListingController extends Controller
         // ]
     }
 
+    public function property() {
+        return view('listings.property');
+    }
+
     //show single listing
     public function show(Listing $listing) {
         return view('listings.show', [
@@ -31,17 +35,17 @@ class ListingController extends Controller
     //Store Listing Data
     public function store(Request $request) {        
         $formFields = $request->validate([
-            'title' => 'required',
-            'company' => ['required', Rule::unique('listings')],
+            'propertyName' => 'required',
+            'propertyType' => ['required', Rule::unique('listings')],
+            'model' => 'required',
             'location' => 'required',
-            'website' => 'required',
-            'email' => ['required','email'],
+            'price' => 'required',
             'tags' => 'required',
             'description' => 'required',
         ]);
 
-        if($request->hasFile('logo')) {
-            $formFields['logo'] = $request->file('logo')->store('logos', 'public');
+        if($request->hasFile('file')) {
+            $formFields['file'] = $request->file('file')->store('logos', 'public');
         }
 
         $formFields['user_id'] = auth()->id();
@@ -64,17 +68,18 @@ class ListingController extends Controller
         }
         
         $formFields = $request->validate([
-            'title' => 'required',
-            'company' => 'required', 
+            'propertyName' => 'required',
+            'propertyType' => ['required', Rule::unique('listings')],
+            'model' => 'required',
             'location' => 'required',
-            'website' => 'required',
-            'email' => ['required','email'],
+            'price' => 'required',
             'tags' => 'required',
             'description' => 'required',
         ]);
 
-        if($request->hasFile('logo')) {
-            $formFields['logo'] = $request->file('logo')->store('logos', 'public');
+      
+        if($request->hasFile('file')) {
+            $formFields['file'] = $request->file('file')->store('logos', 'public');
         }
 
         $listing->update($formFields);

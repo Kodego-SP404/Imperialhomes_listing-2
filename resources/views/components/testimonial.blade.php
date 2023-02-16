@@ -9,7 +9,6 @@
     </p>
   </div>
 
-  <section>
     <div class="mx-auto max-w-screen-xl px-4 py-16 sm:px-6 lg:px-8">
       <div class="swiper-container !overflow-hidden">
         <div class="swiper-wrapper">
@@ -180,12 +179,9 @@
 
         <div class="swiper-pagination !relative !bottom-0 mt-12" style="color: #f59e0b !important">
         </div>
-
-
       </div>
-    </div>
     </div>
   </section>
 
-</section>
+
 <!-- End of testimonials -->

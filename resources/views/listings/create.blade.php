@@ -1,40 +1,53 @@
 <x-layout>
-<x-card class="p-10 rounded max-w-lg mx-auto mt-24">
+<x-card class="p-10 rounded max-w-lg mx-auto my-20">
     <header class="text-center">
         <h2 class="text-2xl font-bold uppercase mb-1">
-            Create a Job
+           Post your property
         </h2>
-        <p class="mb-4">Post a job to find a developer</p>
+        <p class="mb-4">Everyone deserves the opportunuity of home</p>
     </header>
 
     <form method="POST" action="/listings" enctype="multipart/form-data">
       @csrf
         <div class="mb-6">
             <label
-                for="company"
+                for="propertyName"
                 class="inline-block text-lg mb-2"
-                >Company Name</label>
+                >Property Name</label>
             <input
                 type="text"
                 class="border border-gray-200 rounded p-2 w-full"
-                name="company" value="{{old('company')}}"/>
-              @error('company')
+                name="propertyName" value="{{old('propertyName')}}"/>
+              @error('propertyName')
+                <p class="text-red-500 text-xs mt-1">{{$message}}</p>
+              @enderror
+        </div>
+
+        <div class="mb-6">
+            <label
+                for="propertyType"
+                class="inline-block text-lg mb-2"
+                >Property Type</label>
+            <input
+                type="text"
+                class="border border-gray-200 rounded p-2 w-full"
+                name="propertyType" value="{{old('propertyType')}}"/>
+              @error('propertyType')
                 <p class="text-red-500 text-xs mt-1">{{$message}}</p>
               @enderror
         </div>
 
         <div class="mb-6">
             <label for="title" class="inline-block text-lg mb-2"
-                >Job Title</label
+                >Model</label
             >
             <input
                 type="text"
                 class="border border-gray-200 rounded p-2 w-full"
-                name="title"
-                placeholder="Example: Senior Laravel Developer"
-                value="{{old('title')}}"
+                name="model"
+                value="{{old('model')}}"
             />
-            @error('title')
+            @error('Model')
                 <p class="text-red-500 text-xs mt-1">{{$message}}</p>
               @enderror
         </div>
@@ -43,13 +56,12 @@
             <label
                 for="location"
                 class="inline-block text-lg mb-2"
-                >Job Location</label
+                >Location</label
             >
             <input
                 type="text"
                 class="border border-gray-200 rounded p-2 w-full"
                 name="location"
-                placeholder="Example: Remote, Boston MA, etc"
                 value="{{old('location')}}"
             />
             @error('location')
@@ -57,7 +69,7 @@
               @enderror
         </div>
 
-        <div class="mb-6">
+        {{-- <div class="mb-6">
             <label for="email" class="inline-block text-lg mb-2"
                 >Contact Email</label
             >
@@ -70,35 +82,35 @@
             @error('email')
                 <p class="text-red-500 text-xs mt-1">{{$message}}</p>
               @enderror
-        </div>
+        </div> --}}
 
         <div class="mb-6">
             <label
-                for="website"
+                for="Price"
                 class="inline-block text-lg mb-2"
             >
-                Website/Application URL
+            Price
             </label>
             <input
                 type="text"
                 class="border border-gray-200 rounded p-2 w-full"
-                name="website"
-                value="{{old('website')}}"
+                name="price"
+                value="{{old('price')}}"
             />
-            @error('website')
+            @error('price')
                 <p class="text-red-500 text-xs mt-1">{{$message}}</p>
               @enderror
         </div>
 
         <div class="mb-6">
             <label for="tags" class="inline-block text-lg mb-2">
-                Tags (Comma Separated)
+                Tags
             </label>
             <input
                 type="text"
                 class="border border-gray-200 rounded p-2 w-full"
                 name="tags"
-                placeholder="Example: Laravel, Backend, Postgres, etc"
+                placeholder="Example: For sale or For Rent"
                 value="{{old('tags')}}"
             />
             @error('tags')
@@ -108,14 +120,14 @@
 
         <div class="mb-6">
             <label for="logo" class="inline-block text-lg mb-2">
-                Company Logo
+               Upload Photo
             </label>
             <input
                 type="file"
                 class="border border-gray-200 rounded p-2 w-full"
-                name="logo"
+                name="file"
             />
-            @error('logo')
+            @error('file')
                 <p class="text-red-500 text-xs mt-1">{{$message}}</p>
               @enderror
         </div>
@@ -125,13 +137,12 @@
                 for="description"
                 class="inline-block text-lg mb-2"
             >
-                Job Description
+               Description
             </label>
             <textarea
                 class="border border-gray-200 rounded p-2 w-full"
                 name="description"
                 rows="10"
-                placeholder="Include tasks, requirements, salary, etc"
                 value="{{old('description')}}"
             ></textarea>
               @error('description')
@@ -143,7 +154,7 @@
             <button
                 class="bg-laravel text-white rounded py-2 px-4 hover:bg-black"
             >
-                Create Job
+                Submit
             </button>
 
             <a href="/" class="text-black ml-4"> Back </a>

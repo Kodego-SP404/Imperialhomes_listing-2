@@ -17,11 +17,13 @@ class Listing extends Model
         }
 
         if ($filters['search'] ?? false) {
-            $query->where('title', 'like', '%' . request('search') . '%' )
-                ->orWhere('description', 'like', '%' . request('search') . '%' )
-                ->orWhere('company', 'like', '%' . request('search') . '%' )
+            $query->where('propertyName', 'like', '%' . request('search') . '%' )
+                ->orwhere('propertyType', 'like', '%' . request('search') . '%' )
+                ->orwhere('model', 'like', '%' . request('search') . '%' )
+                ->orWhere('location', 'like', '%' . request('search') . '%' )
                 ->orWhere('tags', 'like', '%' . request('search') . '%' )
-                ->orWhere('location', 'like', '%' . request('search') . '%' );
+                ->orWhere('price', 'like', '%' . request('search') . '%' )
+                ->orWhere('description', 'like', '%' . request('search') . '%' );
         }
     }
 

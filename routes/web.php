@@ -26,6 +26,7 @@ use App\Http\Controllers\ListingController;
 
 //All Listing
 Route::get('/', [ListingController::class, 'index']);
+Route::get('/listings/property', [ListingController::class, 'property']);
 
 //Show Create Form
 Route::get('/listings/create', [ListingController::class,'create'])->middleware('auth');

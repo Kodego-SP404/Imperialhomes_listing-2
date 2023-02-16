@@ -1,5 +1,11 @@
 @props(['listing'])
+@vite('resources/css/app.css')
+    @vite('resources/js/app.js')
 
+    <script
+      src="https://kit.fontawesome.com/782572ab2b.js"
+      crossorigin="anonymous"
+    ></script>
 <x-card>
   <div class="flex">
       <img
