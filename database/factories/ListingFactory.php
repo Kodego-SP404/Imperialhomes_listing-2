@@ -21,7 +21,7 @@ class ListingFactory extends Factory
             'propertyName' => $this->faker->sentence(),            
             'propertyType' => $this->faker->sentence(),            
             'model' => $this->faker->paragraph(1),          
-            'tags' => 'laravel, api, backend',             
+            'tags' => 'For sale,For rent',             
             'location' => $this->faker->sentence(),            
             'price' => $this->faker->randomDigit(),                
             'description' => $this->faker->paragraph(3),       

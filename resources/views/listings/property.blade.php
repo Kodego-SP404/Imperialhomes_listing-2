@@ -37,7 +37,7 @@
   @include('partials._search')
   
 
-    <div class="lg:grid grid-cols-3 mx-auto">
+    <div class="lg:grid grid-cols-3">
     
     @unless(count($listings) == 0)
     
