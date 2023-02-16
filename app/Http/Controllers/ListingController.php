@@ -17,7 +17,11 @@ class ListingController extends Controller
     }
 
     public function property() {
-        return view('listings.property');
+        // $listing = Listing::all();
+        // dd($listing);
+        return view('listings.property',[
+            'listings' => Listing::latest()->filter(request(['tag','search']))->paginate(9)
+        ] );
     }
 
     //show single listing
@@ -36,7 +40,7 @@ class ListingController extends Controller
     public function store(Request $request) {        
         $formFields = $request->validate([
             'propertyName' => 'required',
-            'propertyType' => ['required', Rule::unique('listings')],
+            'propertyType' => 'required',
             'model' => 'required',
             'location' => 'required',
             'price' => 'required',
@@ -44,15 +48,15 @@ class ListingController extends Controller
             'description' => 'required',
         ]);
 
-        if($request->hasFile('file')) {
-            $formFields['file'] = $request->file('file')->store('logos', 'public');
+        if($request->hasFile('logo')) {
+            $formFields['logo'] = $request->file('logo')->store('logos', 'public');
         }
 
         $formFields['user_id'] = auth()->id();
 
         Listing::create($formFields);
 
-        return redirect('/')->with('message', 'Listing created successfully!');
+        return redirect('/listings/property')->with('message', 'Listing created successfully!');
     }
 
     //Show Edit Form
@@ -78,8 +82,8 @@ class ListingController extends Controller
         ]);
 
       
-        if($request->hasFile('file')) {
-            $formFields['file'] = $request->file('file')->store('logos', 'public');
+        if($request->hasFile('logo')) {
+            $formFields['logo'] = $request->file('logo')->store('logos', 'public');
         }
 
         $listing->update($formFields);

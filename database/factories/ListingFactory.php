@@ -21,10 +21,9 @@ class ListingFactory extends Factory
             'propertyName' => $this->faker->sentence(),            
             'propertyType' => $this->faker->sentence(),            
             'model' => $this->faker->paragraph(1),          
-            'location' => $this->faker->sentence(),            
             'tags' => 'laravel, api, backend',             
-            'price' => $this->faker->decimal('amount', 5, 2),           
-            'file' => $this->faker->paragraph(1),           
+            'location' => $this->faker->sentence(),            
+            'price' => $this->faker->randomDigit(),                
             'description' => $this->faker->paragraph(3),       
          ];    
         }

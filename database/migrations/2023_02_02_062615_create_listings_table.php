@@ -19,10 +19,10 @@ return new class extends Migration
             $table->string('propertyName');
             $table->string('propertyType');
             $table->string('model');
-            $table->string('location');
-            $table->string('file');
             $table->string('tags');
-            $table->decimal('price', 5, 2);
+            $table->string('location');
+            $table->string('logo')->nullable();
+            $table->string('price');
             $table->longText('description');            
             $table->timestamps();
         });
