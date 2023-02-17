@@ -10,13 +10,14 @@
 
    <div class="flex lg:order-2">
      <ul class="flex space-x-6 mr-6 text-lg">
+         
+         @auth   
          <button
          class="text-white bg-amber-500 hover:bg-amber-400 focus:ring-2 focus:outline-none focus:ring-amber-300 font-medium rounded-lg text-sm px-5 py-2 text-center mr-5 md:mr-0"><a
          href="/listings/create"
          class="text-white"
          >Post Properties</a
-     ></button>
-         @auth                  
+     ></button>               
          <li>
              <a href="/listings/manage" class="hover:text-laravel"
                  ><span class="self-center text-xl font-semibold whitespace-nowrap dark:text-white"><i class="fa-solid fa-gear"></i>
@@ -78,11 +79,6 @@
          <a href="/listings/property"
            class="block py-2 pl-3 pr-4 text-white rounded hover:text-white hover:bg-amber-500 lg:hover:bg-transparent lg:hover:text-amber-500 lg:p-0"><i
              class="fa-solid fa-city"></i> PROPERTIES</a>
-       </li>
-       <li>
-         <a href="/agents"
-           class="block py-2 pl-3 pr-4 text-white rounded hover:text-white hover:bg-amber-500 lg:hover:bg-transparent lg:hover:text-amber-500 lg:p-0"><i
-             class="fa-solid fa-user-tie"></i> AGENTS</a>
        </li>
        <li>
          <a href="#contacts"
