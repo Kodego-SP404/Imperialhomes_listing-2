@@ -28,7 +28,7 @@
             >
           </li>
         </ol>
-        <h3 class="text-7xl text-yellow-500 font-bold mb-8 animate__animated animate__fadeInUp animate__fast">PROPERTIES</h3>
+        <h3 class="text-7xl text-amber-500 font-bold mb-8 animate__animated animate__fadeInUp animate__fast">PROPERTIES</h3>
       </div>
     </div>
   </div>

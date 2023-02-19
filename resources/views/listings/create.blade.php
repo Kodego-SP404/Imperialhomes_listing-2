@@ -1,5 +1,11 @@
 <x-layout>
+    <div class="mt-10 ml-10">
+        <a href="/" class="inline-block text-white/50 hover:text-white/100 rounded-md bg-gray-600/50 hover:bg-gray-600 py-2 px-4 "
+        ><i class="fa-solid fa-arrow-left"></i> Back
+      </a>
+    </div>
 <x-card class="p-10 rounded max-w-lg mx-auto my-20">
+    
     <header class="text-center">
         <h2 class="text-2xl font-bold uppercase mb-1">
            Post your property
@@ -68,21 +74,6 @@
                 <p class="text-red-500 text-xs mt-1">{{$message}}</p>
               @enderror
         </div>
-
-        {{-- <div class="mb-6">
-            <label for="email" class="inline-block text-lg mb-2"
-                >Contact Email</label
-            >
-            <input
-                type="text"
-                class="border border-gray-200 rounded p-2 w-full"
-                name="email"
-                value="{{old('email')}}"
-            />
-            @error('email')
-                <p class="text-red-500 text-xs mt-1">{{$message}}</p>
-              @enderror
-        </div> --}}
 
         <div class="mb-6">
             <label

@@ -6,10 +6,6 @@
 
     <div class="flex flex-col lg:flex-row">
 
-      <div class="lg:shrink-0">
-        <img class="justify-center w-full" src="images/about-us.avif" alt="Picture">
-      </div>
-
       <div class="text flex flex-col ml-9">
 
         <div class="font-semibold text-3xl mt-5 text-left">

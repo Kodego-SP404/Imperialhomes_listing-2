@@ -44,7 +44,7 @@
         <div class="relative block bg-white rounded-lg shadow-lg h-full">
           <div class="flex">
             <div
-              class="relative overflow-hidden bg-no-repeat bg-cover relative overflow-hidden bg-no-repeat bg-cover shadow-lg rounded-lg mx-4 -mt-4"
+              class="relative overflow-hidden bg-no-repeat bg-cover shadow-lg rounded-lg mx-4 -mt-4"
               data-mdb-ripple="true" data-mdb-ripple-color="light">
               <img src="https://mdbcdn.b-cdn.net/img/new/standard/city/031.webp" class="w-full" />
               <a href="#!">
@@ -69,8 +69,8 @@
               veritatis omnis ex iusto?
             </p>
             <a href="#!" data-mdb-ripple="true" data-mdb-ripple-color="light"
-              class="inline-block px-6 py-2.5 bg-amber-500 text-white font-medium text-xs leading-tight uppercase rounded-full shadow-md hover:bg-amber-400 hover:shadow-lg focus:bg-amber-300 focus:shadow-lg focus:outline-none focus:ring-0 active:bg-amber-400 active:shadow-lg transition duration-150 ease-in-out">Read
-              more</a>
+            class="inline-block px-6 py-2.5 bg-amber-500 text-white font-medium text-xs leading-tight uppercase rounded-full shadow-md hover:bg-amber-400 hover:shadow-lg focus:bg-amber-300 focus:shadow-lg focus:outline-none focus:ring-0 active:bg-amber-400 active:shadow-lg transition duration-150 ease-in-out">Read
+            more</a>
           </div>
         </div>
       </div>
@@ -80,7 +80,7 @@
         <div class="relative block bg-white rounded-lg shadow-lg h-full">
           <div class="flex">
             <div
-              class="relative overflow-hidden bg-no-repeat bg-cover relative overflow-hidden bg-no-repeat bg-cover shadow-lg rounded-lg mx-4 -mt-4"
+              class="relative overflow-hidden bg-no-repeat bg-cover shadow-lg rounded-lg mx-4 -mt-4"
               data-mdb-ripple="true" data-mdb-ripple-color="light">
               <img src="https://mdbcdn.b-cdn.net/img/new/standard/city/081.webp" class="w-full" />
               <a href="#!">
@@ -102,8 +102,8 @@
               massa volutpat feugiat. Donec.
             </p>
             <a href="#!" data-mdb-ripple="true" data-mdb-ripple-color="light"
-              class="inline-block px-6 py-2.5 bg-amber-500 text-white font-medium text-xs leading-tight uppercase rounded-full shadow-md hover:bg-amber-400 hover:shadow-lg focus:bg-amber-300 focus:shadow-lg focus:outline-none focus:ring-0 active:bg-amber-400 active:shadow-lg transition duration-150 ease-in-out">Read
-              more</a>
+            class="inline-block px-6 py-2.5 bg-amber-500 text-white font-medium text-xs leading-tight uppercase rounded-full shadow-md hover:bg-amber-400 hover:shadow-lg focus:bg-amber-300 focus:shadow-lg focus:outline-none focus:ring-0 active:bg-amber-400 active:shadow-lg transition duration-150 ease-in-out">Read
+            more</a>
           </div>
         </div>
       </div>

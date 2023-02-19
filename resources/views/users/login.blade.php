@@ -50,7 +50,7 @@
                     </div>
                     <div class="text-center pt-1 mb-12 pb-1">
                       <button
-                        class="bg-yellow-400 inline-block px-6 py-2.5 text-white font-medium text-xs leading-tight uppercase rounded shadow-md hover:bg-blue-700 hover:shadow-lg focus:shadow-lg focus:outline-none focus:ring-0 active:shadow-lg transition duration-150 ease-in-out w-full mb-3"
+                        class="bg-amber-400 inline-block px-6 py-2.5 text-white font-medium text-xs leading-tight uppercase rounded shadow-md hover:bg-blue-700 hover:shadow-lg focus:shadow-lg focus:outline-none focus:ring-0 active:shadow-lg transition duration-150 ease-in-out w-full mb-3"
                         type="submit"
                         data-mdb-ripple="true"
                         data-mdb-ripple-color="light"
@@ -63,7 +63,7 @@
                       <p class="mb-0 mr-2">Don't have an account?</p>
                       <button
                         type="button"
-                        class="inline-block px-6 py-2 border-2 border-yellow-400 text-yellow-400 font-medium text-xs leading-tight uppercase rounded hover:bg-black hover:bg-opacity-5 focus:outline-none focus:ring-0 transition duration-150 ease-in-out"
+                        class="inline-block px-6 py-2 border-2 border-amber-400 text-amber-400 font-medium text-xs leading-tight uppercase rounded hover:bg-black hover:bg-opacity-5 focus:outline-none focus:ring-0 transition duration-150 ease-in-out"
                         data-mdb-ripple="true"
                         data-mdb-ripple-color="light"
                       >

@@ -1,9 +1,9 @@
  <!-- ####################################### Start Navbar ########################################### -->
  <nav
- class=" px-2 sm:px-4 py-2.5 bg-sky-900 min-w-full md:min-w-screen z-20 top-0 left-0 border-b border-gray-200 dark:border-gray-600">
+ class=" px-2 sm:px-4 py-2.5 bg-cyan-800 min-w-full md:min-w-screen z-20 top-0 left-0 border-b border-gray-200 dark:border-gray-600">
  <div class="container flex flex-wrap items-center justify-between mx-auto">
    <a href="/" class="flex items-center">
-     <img src="/" class="h-6 mr-3 sm:h-9">
+     <img src="{{asset('images/logo.png')}}" class="h-6 mr-3 sm:h-9">
      <span class="self-center text-xl font-semibold whitespace-nowrap text-amber-500">IMPERIAL</span><span
        class="self-center text-xl font-semibold whitespace-nowrap dark:text-white">HOMES</span>
    </a>

@@ -1,21 +1,22 @@
  
 
- <section class="h-screen flex flex-col bg-gray-600 bg-center bg-cover bg-blend-overlay bg-black/50"
- style="background-image: url(images/hero-bg.jpg)">
- <!-- ####################################### Start Hero Content ###################################### -->
- <div class="flex-1 flex items-center container mx-auto px-7">
-    <div class="text-center mx-auto">
-      <h1 class="text-5xl text-amber-500 m-10 mb-10">
-        Your Property Is Our Priority
-      </h1>
-      <p class="text-md font-light text-amber-300 mt-5">
-        A small river named Duden flows by their place and supplies it with
-        the necessary regelialia. It is a paradisematic country, in which
-        roasted parts of sentences fly into your mouth.
-      </p>
-      <a class="px-10 py-3 mt-5 text-white bg-amber-500 hover:bg-amber-400 inline-block rounded-2xl" href="#">Learn
-        More <i class="fa-sharp fa-solid fa-arrow-right"></i></a>
-    </div>
-  </div>
-  <!-- End of Hero -->
- </section>
+ <div class="relative overflow-hidden bg-no-repeat bg-cover" style="
+ background-position: 50%;
+ background-image: url('./images/h1.jpg');
+ height: 750px;
+">
+ <div class="absolute top-0 right-0 bottom-0 left-0 w-full h-full overflow-hidden bg-fixed"
+   style="background-color: rgba(0, 0, 0, 0.75)">
+   <div class="flex justify-center items-center h-full">
+     <div class="text-center text-white px-6 md:px-12">
+       <h1 class="text-5xl font-bold mt-0 mb-6"><span class="text-amber-500">IMPERIAL</span>HOMES</h1>
+       <h3 class="text-2xl font-light mb-8">“The magic thing about home is that it feels good to leave, and it feels even better to come back.”</h3>
+       <button type="button"
+         class="inline-block px-6 py-2.5 border-2 border-white text-white font-medium text-xs leading-tight uppercase rounded hover:bg-black hover:bg-opacity-5 focus:outline-none focus:ring-0 transition duration-150 ease-in-out"
+         data-mdb-ripple="true" data-mdb-ripple-color="light">
+         Get started
+       </button>
+     </div>
+   </div>
+ </div>
+</div>

@@ -15,6 +15,16 @@
         <link href="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.6.3/flowbite.min.css" rel="stylesheet" />
         <script src="//unpkg.com/alpinejs" defer></script>
         <script src="https://cdn.tailwindcss.com"></script>
+        {{-- About-Us Animation --}}
+        <script src="https://code.jquery.com/jquery-1.12.4.min.js"
+            integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ=" crossorigin="anonymous"></script>
+          <script src="http://cdnjs.cloudflare.com/ajax/libs/waypoints/2.0.3/waypoints.min.js"></script>
+          @vite('resources/js/app.js')
+           @vite('resources/js/jquery.counterup.min.js')             
+
+        {{-- Testimonials Carousel Effects --}}
+        <link href="https://unpkg.com/swiper/swiper-bundle.min.css" rel="stylesheet" />
+        <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
         
         <script>
             tailwind.config = {
@@ -29,7 +39,7 @@
         </script>
         <title>IMPERIALHOMES | You're my homie</title>
     </head>
-    <body>
+    <body class="bg-cyan-600">
         <main>
             {{$slot}}
            

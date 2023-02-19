@@ -1,25 +1,119 @@
 <x-layout>
-@include('partials._search')
 
-<a href="/" class="inline-block text-black ml-4 mb-4"
-                ><i class="fa-solid fa-arrow-left"></i> Back
-            </a>
+
+
   
-      <x-card class="p-10">
-        <div class="grid grid-cols-2 items-center">
-            <div class="">
-                <img
-                class="w-100 h-full mr-6 rounded-tl-3xl rounded-bl-3xl"
+      <x-card class="p-5">
+        <div>
+          <a href="/" class="inline-block text-white/50 hover:text-white/100 rounded-md bg-gray-600/50 hover:bg-gray-600 py-2 px-4 "
+          ><i class="fa-solid fa-arrow-left"></i> Back
+        </a>
+        </div>
+        <div class="mx-6 py-10 text-center md:text-left">
+          <div class="grid grid-1 md:grid-cols-1 lg:grid-cols-2 gap-0">
+      
+            <div class="grid justify-items-stretch col-span-1 lg:col-span-1">
+              <img
+                class="w-full h-full mr-6 rounded-md"
                 src="{{$listing->file ? asset('storage/' . $listing->file) : asset('images/h10.jpg')}}"
                 alt=""
             />
             </div>
-            <div class="bg-sky-900 h-full rounded-tr-3xl rounded-br-3xl">
-                <div class="p-5 flex flex-col gap-3">
-                    <h3 class="text-5xl text-yellow-500 font-bold mb-2">{{$listing->propertyName}}</h3>
+      
+            <div class="flex flex-col justify-center lg:p-5 my-5">
+              <div>
+                <form>
+                  <div class="form-group mb-6">
+                    <input type="text" class="form-control block
+                      w-full
+                      px-3
+                      py-1.5
+                      text-base
+                      font-normal
+                      text-gray-700
+                      bg-white bg-clip-padding
+                      border border-solid border-gray-300
+                      rounded
+                      transition
+                      ease-in-out
+                      m-0
+                      focus:text-gray-700 focus:bg-white focus:border-blue-600 focus:outline-none" id="exampleInput7"
+                      placeholder="Name">
+                  </div>
+                  <div class="form-group mb-6">
+                    <input type="email" class="form-control block
+                      w-full
+                      px-3
+                      py-1.5
+                      text-base
+                      font-normal
+                      text-gray-700
+                      bg-white bg-clip-padding
+                      border border-solid border-gray-300
+                      rounded
+                      transition
+                      ease-in-out
+                      m-0
+                      focus:text-gray-700 focus:bg-white focus:border-blue-600 focus:outline-none" id="exampleInput8"
+                      placeholder="Email address">
+                  </div>
+                  <div class="form-group mb-6">
+                    <textarea
+                    class="
+                      form-control
+                      block
+                      w-full
+                      px-3
+                      py-1.5
+                      text-base
+                      font-normal
+                      text-gray-700
+                      bg-white bg-clip-padding
+                      border border-solid border-gray-300
+                      rounded
+                      transition
+                      ease-in-out
+                      m-0
+                      focus:text-gray-700 focus:bg-white focus:border-blue-600 focus:outline-none
+                    "
+                    id="exampleFormControlTextarea13"
+                    rows="3"
+                    placeholder="Message"
+                  ></textarea>
+                  </div>
+                  <div class="form-group form-check text-center mb-6">
+                    <input type="checkbox"
+                      class="form-check-input appearance-none h-4 w-4 border border-gray-300 rounded-sm bg-white checked:bg-blue-600 checked:border-blue-600 focus:outline-none transition duration-200 mt-1 align-top bg-no-repeat bg-center bg-contain mr-2 cursor-pointer"
+                      id="exampleCheck87" checked>
+                    <label class="form-check-label inline-block text-gray-800" for="exampleCheck87">Send me a copy of this message</label>
+                  </div>
+                  <button type="submit" class="
+                    w-full
+                    px-6
+                    py-2.5
+                    bg-blue-600
+                    text-white
+                    font-medium
+                    text-xs
+                    leading-tight
+                    uppercase
+                    rounded
+                    shadow-md
+                    hover:bg-blue-700 hover:shadow-lg
+                    focus:bg-blue-700 focus:shadow-lg focus:outline-none focus:ring-0
+                    active:bg-blue-800 active:shadow-lg
+                    transition
+                    duration-150
+                    ease-in-out">Send</button>
+                </form>
+              </div>
+            </div>
+      
+            <div  class="flex flex-col justify-center items-center lg:items-start bg-black/30 p-5 lg:border-black/50 lg:border-r-2 lg:mt-5">
+              <h3 class="text-5xl text-amber-500 font-bold mb-2">{{$listing->propertyName}}</h3>
             
-                  <div class="flex items-center gap-2">
-                    <span>
+                  <div class="flex gap-2">
+                    <span class="flex">
                         <x-listing-tags :tagsCsv="$listing-> tags"/>
                     </span>           
                     <span class="text-lg text-white">
@@ -32,40 +126,26 @@
             
                     
                   <div class="text-lg mb-2 text-white">
-                    <span class="text-white">Php </span>
+                    <span class="text-white">Price: </span>
                     {{$listing->price}}
                  </div>
-                    
-                  <div class="mt-2 flex gap-2">
-                    <button class="bg-yellow-500 hover:opacity-90
-                    px-6 py-2 rounded-md text-white">Buy Me</button>
-                  </div>
-                </div>
-                <div class="p-5">
-                    <h3 class="text-3xl font-bold mb-2 text-yellow-500">
-                        Property Description
-                    </h3>
-                    <div class="text-lg space-y-6 text-white">
-                        <p>
-                          {{$listing->description}}
-                        </p>
-        
-                    </div>
-                </div>
-                </div>
-                  
-                </div>
-                
             </div>
-        </div>
-        
+
+            <div  class="flex flex-col items-center lg:items-start bg-black/30 p-5 lg:mt-5">
+              <h3 class="text-3xl font-bold mb-2 text-amber-500">
+                Property Description
+            </h3>
+            <div class="text-lg space-y-6 text-white">
+                <p>
+                  {{$listing->description}}
+                </p>
+            </div>
+            </div>
+      
+          </div>
+        </div>      
         </x-card>
- 
 
 
-
-
-    
-
-
+        
 </x-layout>

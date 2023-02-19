@@ -90,7 +90,7 @@
                               <div class="mt-3">
                                 <button
                                 type="submit"
-                                class="inline-block px-6 py-2 border-2 border-yellow-400 text-yellow-400 font-medium text-xs leading-tight uppercase rounded hover:bg-black hover:bg-opacity-5 focus:outline-none focus:ring-0 transition duration-150 ease-in-out"
+                                class="inline-block px-6 py-2 border-2 border-amber-400 text-amber-400 font-medium text-xs leading-tight uppercase rounded hover:bg-black hover:bg-opacity-5 focus:outline-none focus:ring-0 transition duration-150 ease-in-out"
                                 data-mdb-ripple="true"
                                 data-mdb-ripple-color="light"
                               >
@@ -98,7 +98,7 @@
                             </div>                             
                                 </button>
                               <div class="flex items-center py-6">
-                                <p class="mb-0 mr-2">Already have an account?</p><a href="/login"> <span class="text-yellow-400">Log in</span></a>
+                                <p class="mb-0 mr-2">Already have an account?</p><a href="/login"> <span class="text-amber-400">Log in</span></a>
                               </div>
                           </form>                      
                   </div>

@@ -20,7 +20,7 @@
      
       <div class="p-6">
         <a href="/listings/{{$listing->id}}">
-        <h5 class="text-5xl text-yellow-500 font-bold mb-2">{{$listing->propertyName}}</h5>
+        <h5 class="text-5xl text-amber-500 font-bold mb-2">{{$listing->propertyName}}</h5>
         </a>
 
         <div class="text-lg font-thin my-4 flex items-center text-white rounded-xl py-1 bg-sky-700 px-3 mr-2">

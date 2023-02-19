@@ -25,12 +25,12 @@
   </div>
 
   <div class="mx-6 py-10 text-center md:text-left">
-    <div class="grid grid-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+    <div class="grid grid-1 md:grid-cols-2 lg:grid-cols-5 gap-20">
 
-      <div class="grid justify-items-stretch">
+      <div class="grid justify-items-stretch col-span-1 lg:col-span-2">
         <h6
           class="uppercase font-semibold mb-4 flex justify-self-center md:justify-self-start xl:justify-self-center lg:justify-self-center">
-          <img src="/" alt="" class="w-15 h-20">
+          <img src="{{asset('images/logo.png')}}" alt="" class="w-15 h-20">
         </h6>
         <p class="lg:text-center md:text-left sm:text-center">
           Making your home ownership dreams come true.<br />Find your dream
@@ -89,10 +89,10 @@
     </div>
   </div>
 
-  <div class="text-center p-6 bg-gray-200">
-    <span class="text-amber-500">© </span>
+  <div class="text-center p-6 bg-gray-300/70">
+    <span class="text-white">© </span>
     <span>2023 Copyright. </span>
-    <a class="text-amber-500 font-semibold" href="#">IMPERIALHOMES</a>
+    <a class="text-white font-semibold" href="#"><span class="text-amber-500">IMPERIAL</span>HOMES</a>
   </div>
 </footer>
 <!-- end of footer -->

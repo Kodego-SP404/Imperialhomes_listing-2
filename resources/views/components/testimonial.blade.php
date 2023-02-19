@@ -46,7 +46,7 @@
             <div>
               <div class="block rounded-lg shadow-lg bg-white">
                 <div class="overflow-hidden rounded-t-lg h-28" style="background-color: #f59e0b"></div>
-                <div class="w-24 -mt-12 overflow-hidden border border-2 border-white rounded-full mx-auto bg-white">
+                <div class="w-24 -mt-12 overflow-hidden border-2 border-white rounded-full mx-auto bg-white">
                   <img src="https://mdbcdn.b-cdn.net/img/Photos/Avatars/img%20(2).webp" />
                 </div>
                 <div class="p-6">
